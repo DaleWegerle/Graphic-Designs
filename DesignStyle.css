@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    background-color: #300056;
+    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#imageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background-color: #ffffff;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav i {
+    margin: 1vw;
+    color: #3b3b3b;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav i:hover {
+    color: #F128C5;
+  }
+  
+  /* Add an active class to highlight the current page */
+
+  
+  /* Hide the link that should open and close the topnav on small screens */
+
+.sideNav{
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    width: 3%;
+    height: auto;
+    margin-top: -2.5em;
+    border-radius: 25%;
+}
+
+.sideNav i{
+    color: #F128C5;
+}
+
+.sideNav i:hover{
+    color: #F128C5;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+

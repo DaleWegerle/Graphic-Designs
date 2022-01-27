@@ -1,0 +1,942 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: myFontLight;
+    background-color: #300056;
+    
+    
+}
+
+html{
+  font-size: 16px;
+}
+
+@font-face{
+    font-family: myFontBold;
+    src: url(fonts/Montserrat/Montserrat-Black.ttf); 
+}
+
+@font-face{
+    font-family: myFontMedium;
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf); 
+}
+
+@font-face{
+    font-family: myFontLight;
+    src: url(fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face{
+    font-family: myFontThin;
+    src: url(fonts/Montserrat/Montserrat-Thin.ttf); 
+}
+
+p{
+  font-size: 1.4em;
+  line-height: 1.9em;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-left: 5%;
+    
+  }
+ 
+ .navBack{
+   width: 100%;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   background-color: #E0A326;
+   z-index: 100;
+ }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: myFontMedium;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #F128C5;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    
+    border-bottom: #E0A326 solid 5px;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .clearFloat{
+      clear: left;
+  }
+
+.containerNav{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("images/splashBack.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #300056;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    color: white;
+}
+
+.title {
+    width: 50%;
+    flex: 50%;
+    margin: auto;
+    text-align: left;   
+
+}
+
+.title > h1 {
+    line-height: 0.8em;
+    font-size: 5em;
+    font-weight: 700;
+    margin-left: 10%;
+    font-family: myFontBold;
+}
+
+.animated {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h3{
+  color: #F128C5;
+  line-height: 0em;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-family: myFontThin;
+
+}
+
+
+.title > h3{
+    
+  margin-left: 10%;
+  margin-bottom: 8%;
+    
+}
+
+.plus{
+    color: #cccccc;
+    font-family: myFontBold;
+  
+    
+}
+
+.contactButton{
+  margin-left: 10%;
+  font-size: 1.4em;
+  font-family: myFontMedium;
+  color: #cccccc;
+  background-color: transparent;
+  border: solid 2px #E0A326;
+  padding: 0.5em;
+  text-decoration: none;
+
+}
+
+.contactButton:hover{
+  background-color: #E0A326;
+}
+
+
+.scene{
+    width: 50%;
+    height: 650px;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.planetFront{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planetsMiddle{
+    margin-top: 25%;
+    margin-left: 15%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;  
+}
+
+.planetsBack{
+    margin-top: 25%;
+    margin-left: 15%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;  
+}
+
+.bouncingSpaceMan{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.scrollDown{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.about{
+  padding: 4em;
+  color: #cccccc;
+  
+}
+
+.skillsContainer{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.rocket{
+  padding-top: 2%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-cont{
+  
+  width: 50%;
+  max-width: 50%;
+  margin: 0 ;
+}
+
+.barTitle{
+  color: #F128C5;
+  margin: 2px;
+  font-family: myFontMedium;
+}
+
+.bar{
+  height: 30px;
+  max-width: 100%;
+  margin: 0 auto 10px auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.bar::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 0;
+  z-index: -2;
+  background: #cccccc;
+}
+.bar::after{
+  content: '';
+  background: #E0A326;
+  height: 30px;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  -webkit-animation: bar-before 1 1.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bar1::after{
+  max-width: 90%;
+}
+.bar2::after{
+  max-width: 90%;
+}
+.bar3::after{
+  max-width: 80%;
+}
+.bar4::after{
+  max-width: 70%;
+}
+
+.bar6::after{
+  max-width: 50%;
+}
+.bar7::after{
+  max-width: 50%;
+}
+.bar8::after{
+  max-width: 30%;
+}
+.bar9::after{
+  max-width: 30%;
+}
+.bar10::after{
+  max-width: 30%;
+}
+
+
+@-webkit-keyframes bar-before{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.logos{
+  margin-top: 5em;
+  display: flex;
+  flex: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.work{
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 7em;
+  margin-bottom: 15em;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.plusWork{
+  color: #F128C5;
+  font-family: myFontBold;
+}
+
+.design{
+  position: absolute;
+  color: #F128C5;
+  font-size: 10em;
+  transform: translateX(-110px);
+  margin:0;
+  z-index: 1;
+  font-family: myFontMedium;
+  text-decoration: none;
+}
+
+.design:hover{
+  position: absolute;
+  color: #F128C5;
+  font-size: 10em;
+  transform: translateX(-110px);
+  margin:0;
+  z-index: 1;
+  font-family: myFontMedium;
+  text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #cccccc;
+}
+
+.clickHere{
+  transform: translateY(200px);
+}
+
+.code{
+  position: absolute;
+  color: #E0A326;
+  font-size: 10em;
+  transform:translate(150px, 100px);
+  margin: auto;
+  font-family: myFontThin;
+  text-decoration: none;
+}
+
+.myWork{
+  position: absolute;
+  color: #cccccc;
+  transform:translate(-185px, -85px);
+  margin: auto;
+  font-family: myFontThin;
+
+}
+
+.clickOne{
+  position: absolute;
+  color: #cccccc;
+  transform: translate(150px, 200px);
+  margin: auto;
+  font-family: myFontThin;
+
+}
+
+.code:hover{
+  position: absolute;
+  font-size: 10em;
+  transform:translate(150px, 100px);
+  margin: auto;
+  font-family: myFontThin;
+  z-index: 2;
+  background-image: url("images/galaxy.gif");
+	background-size: cover;
+  background-position: center;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.contact{
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7em;
+
+}
+
+form{
+  width: 50%;
+  margin-top: 5em;
+}
+
+.spaceMan{
+  width: 50%;
+}
+
+label{
+  color: #F128C5;
+  line-height: 0em;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  font-family: myFontMedium;
+}
+
+input{
+  padding: 0.5em;
+}
+
+textarea{
+  padding: 0.5em;
+}
+
+.input{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: left;
+  margin-right: auto;
+  width: 80%;
+  border: 2px solid #E0A326;
+  background-color: transparent;
+  color: #cccccc;
+  font-size: 1.4em;
+
+}
+
+.submit{
+  background-color: #E0A326;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: left;
+  border-style: none;
+  font-size: 1.4em;
+  font-family: myFontMedium;
+  color: #cccccc;
+}
+
+.footer{
+  display: flex;
+    flex-wrap: wrap;
+    background-image: url("images/footerBack.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #300056;
+    width: 100%;
+    height: 340px;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      margin-right: 5%;
+      float: right;
+      display: block;
+    }
+  }  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      margin-right: 5%;
+      position: fixed;
+      top: 0;
+      background-color: #E0A326;
+      z-index: 100;   
+    }
+    .topnav.responsive a.icon {
+      
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      font: 1em;
+    }
+
+    .bouncingSpaceMan{
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      visibility: visible;
+      position: relative;
+      height: fit-content;
+    }
+
+    .title{
+
+      width: 100%;
+      text-align: center; 
+    }
+
+    .title > h1{
+      font-size: 2em;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .title > h3{
+      margin-left: 0;
+    }
+
+    h3{
+      font-size: 1.3em;
+    }
+
+    .contactButton{
+      margin-left: 0;
+      font-size: 1em;
+    }
+
+    .scene{
+      width: 100%;
+      display: none;
+    }
+
+    p{
+      font-size: 1em;
+    }
+
+    .rocket{
+      width: 100%;
+    }
+
+    .graph-cont{
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .skillsContainer{
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    .design{
+      font-size: 5em;
+      transform: translateX(-50px);
+      background-image: url("images/galaxy.gif");
+	    background-size: cover;
+      background-position: center;
+    	color: transparent;
+    	-moz-background-clip: text;
+	    -webkit-background-clip: text;
+    }
+
+    .code{
+      font-size: 5em;
+      transform:translate(85px, 75px);
+      z-index: 5;
+    }
+
+    .myWork{
+      transform:translate(-120px, -80px);
+
+    }
+
+    .clickOne{
+      transform: translate(90px, 150px);
+    }
+
+    .clickHere{
+      position: absolute;
+    }
+
+    .work{
+      margin-top: 5em;
+    }
+
+    .contact{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7em;
+    
+    }
+
+    .spaceMan{
+      position: absolute;
+      width: 100%;
+      visibility: hidden;
+    }
+
+    form{
+      padding: 4em;
+      width: 100%;
+    }
+
+    input{
+      padding: 0.5em;
+      align-items: center;
+      margin: auto;
+    }
+
+    textarea{
+      padding: 0.5em;
+      align-items: center;
+      margin: auto;
+    }
+
+    .input{
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 2px solid #E0A326;
+      background-color: transparent;
+      color: #cccccc;
+      font-size: 1.4em;
+    }
+
+    label{
+      margin: auto;
+    }
+
+    .submit{
+      width: 100%;
+      margin-top: 2em;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+
+    .bouncingSpaceMan{
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      visibility: visible;
+      position: relative;
+      height: fit-content;
+    }
+
+    .title{
+
+      width: 100%;
+      text-align: center; 
+    }
+
+    .title > h1{
+      font-size: 3.5em;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .title > h3{
+      margin-left: 0;
+    }
+
+    h3{
+      font-size: 2em;
+    }
+
+    .contactButton{
+      margin-left: 0;
+      font-size: 1.2em;
+    }
+
+    .scene{
+      width: 100%;
+      display: none;
+    }
+
+    p{
+      font-size: 1.2em;
+    }
+
+    .rocket{
+      width: 100%;
+    }
+
+    .graph-cont{
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .skillsContainer{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .design{
+      font-size: 7em;
+      background-image: url("images/galaxy.gif");
+	    background-size: cover;
+      background-position: center;
+    	color: transparent;
+    	-moz-background-clip: text;
+	    -webkit-background-clip: text;
+
+    }
+
+    .code{
+      font-size: 7em;
+    }
+
+    .contact{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7em;
+    
+    }
+
+    .spaceMan{
+      position: absolute;
+      width: 100%;
+      visibility: hidden;
+    }
+
+    form{
+      padding: 4em;
+      width: 100%;
+    }
+
+    input{
+      padding: 0.5em;
+      align-items: center;
+      margin: auto;
+    }
+
+    textarea{
+      padding: 0.5em;
+      align-items: center;
+      margin: auto;
+    }
+
+    .input{
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 2px solid #E0A326;
+      background-color: transparent;
+      color: #cccccc;
+      font-size: 1.4em;
+    }
+
+    label{
+      margin: auto;
+    }
+
+    .submit{
+      width: 100%;
+      margin-top: 2em;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 992px) {
+    .bouncingSpaceMan{
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      visibility: visible;
+      position: relative;
+      height: fit-content;
+    }
+
+    .title{
+
+      width: 100%;
+      text-align: center; 
+    }
+
+    .title > h1{
+      font-size: 3.5em;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .title > h3{
+      margin-left: 0;
+    }
+
+    h3{
+      font-size: 2em;
+    }
+
+    .contactButton{
+      margin-left: 0;
+      font-size: 1.2em;
+    }
+
+    .scene{
+      width: 100%;
+      display: none;
+    }
+
+    p{
+      font-size: 1.2em;
+    }
+
+    .rocket{
+      width: 100%;
+    }
+
+    .graph-cont{
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .skillsContainer{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .design{
+      font-size: 7em;
+      background-image: url("images/galaxy.gif");
+	    background-size: cover;
+      background-position: center;
+    	color: transparent;
+    	-moz-background-clip: text;
+	    -webkit-background-clip: text;
+
+    }
+
+    .code{
+      font-size: 7em;
+    }
+
+    .contact{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7em;
+    
+    }
+
+    .spaceMan{
+      position: absolute;
+      width: 100%;
+      visibility: hidden;
+    }
+
+    form{
+      padding: 4em;
+      width: 100%;
+    }
+
+    input{
+      padding: 0.5em;
+      align-items: center;
+      margin: auto;
+    }
+
+    textarea{
+      padding: 0.5em;
+      align-items: center;
+      margin: auto;
+    }
+
+    .input{
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 2px solid #E0A326;
+      background-color: transparent;
+      color: #cccccc;
+      font-size: 1.4em;
+    }
+
+    label{
+      margin: auto;
+    }
+
+    .submit{
+      width: 100%;
+      margin-top: 2em;
+    }
+  
+  } 
+  

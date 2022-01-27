@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       
+        <title>Dale Wegerle</title>
+        
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="noframework.waypoints.min.js"></script>
+
+    </head>
+
+    <body >
+
+        
+
+        <!--Interactive banner-->
+        
+
+        <div id="containerNav" class="containerNav">
+
+            <div class="topnav" id="myTopnav">
+                <a href="#scene" class="active">Intro</a>
+                <a href="#about">About Me</a>
+                <a href="#work">My Work</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+            <div class="clearFloat"></div>
+            
+            
+            <div id="title" class="title">
+              <div class="bouncingSpaceMan">
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_eidrwtqt.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop autoplay></lottie-player>
+              </div>
+                <!--<h1>DALE<span><br></span> WEGERLE</h1>-->
+                <h1>Dale<br> Wegerle</h1>
+                              
+                <h3>Designer <span class="plus">+</span> Coder</h3>
+
+                <a class="contactButton" href="#contact">Contact Me</a>
+                
+            </div>
+
+            
+            <div id="scene" class="scene">
+                <div class="planetFront" data-depth="0.80"><img src="images/planetFront.png"></div>
+                <div class="planetsMiddle" data-depth="0.40"><img src="images/planetsMiddle.png"></div>
+                <div class="planetsBack" data-depth="0.20"><img src="images/planetsBack.png"></div>
+            </div>
+
+            
+
+            <div class="scrollDown">
+              <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_iijiksks.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop autoplay></lottie-player>
+            </div>
+        </div>
+
+        
+
+        <div class="about" id="about">
+          <h3>About Me <span class="plus">+</span> Skills</h3><br>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <br>
+
+          <div class="skillsContainer">
+          <div class="graph-cont" id="skills">
+            <p class="barTitle">Adobe <span style="font-family: myFontThin; color: #CCCCCC;">(Ilustrator, Photoshop, Indesign)</span></p>
+            <div class="barWait bar1">90%</div>
+            <p class="barTitle">HTML 5</p>
+            <div class="barWait bar2">90%</div>
+            <p class="barTitle">CSS 3</p>
+            <div class="barWait bar3">80%</div>
+            <p class="barTitle">JAVASCRIPT</p>
+            <div class="barWait bar4">70%</div>
+            <p class="barTitle">PHP</p>
+            <div class="barWait bar6">50%</div>
+            <p class="barTitle">MySQL</p>
+            <div class="barWait bar7">50%</div>
+          </div>
+
+          <div class="rocket">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_hhchqvbs.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px;"  loop autoplay></lottie-player>
+          </div>
+        </div>
+
+       <!-- <div class="logos">
+          <img src="images/python.png">
+          <img src="images/mysql.png">
+          <img src="images/javascript.png">
+          <img src="images/css.png">
+          <img src="images/adobe.png">
+          <img src="images/html.png">
+          <img src="images/php.png">
+          <img src="images/csharp.png">
+          <img src="images/java.png">
+        </div>-->
+
+        </div>
+
+        <div class="work" id="work">
+          <h3 class="myWork ">My <span class="plusWork">+</span> Work</h3>
+          <a class="design" href="SDA.html">Design</a>
+          <a class="code" href="#">Code</a>
+          <div class="clickHere">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_8eswjzq5.json"  background="transparent"  
+          speed="1"  style="width: 100px; height: 100px;"  loop autoplay></lottie-player>
+          </div>
+          <h3 class="clickOne">Click <span class="plusWork">+</span> One</h3>
+        </div>
+
+        <div class="contact" id="contact">
+            <img src="images/formBack-01.png" class="spaceMan">
+            
+             <form>
+                <label  for="name">Name:</label>
+                <input class="input" id="input" type="text" required maxlength="20">
+                <label for="name">State Your Business:</label>
+                <textarea class="input" type="text" required rows="10"></textarea>
+                <label for="email">Email:</label>
+                <input class="input" type="email" required maxlength="50">
+                <input class="submit" type=”submit” value=Submit> 
+             </form>
+        </div>
+
+        <div class="footer" id="footer">
+            
+        </div>
+
+        <script>
+
+           //
+          //
+          //CONTACT MOUSE INTERACTION
+          //
+          //
+          //jQuery(document).ready(function(){
+            // $('.formContainer').mousemove(function(e){
+              //var rXP = (e.pageX - this.offsetLeft-$(this).width()/10);
+              //var rYP = (e.pageY - this.offsetTop-$(this).height()/10);
+              //$('.formContainer').css('box-shadow',
+              // +rYP/10+'px '+rXP/10+'px rgba(224, 163, 38, 1), '+rYP/10+'px '+rXP/10+'px rgba(241, 40, 197, 1), '+rXP/10+'px '+rYP/10+'px rgba(241, 40, 197, 1)');
+            //});
+          //});
+
+
+          //
+          //
+          //PARALAX SCRIPT CALL
+          //
+          //
+
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
+
+          //
+          //
+          //NAV SCRIPT
+          //
+          //
+
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav" || x.className === "navBack") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                  if ($(document).scrollTop() > 10) {
+                    $(".topnav").addClass("navBack");
+                 } else {
+                   $(".topnav").removeClass("navBack");
+                 }
+               });
+              });
+
+
+          //
+          //
+          //WAYPOINT SCRIPT
+          //
+          //
+
+            $(document).ready(function(){
+
+              var waypoint = new Waypoint({
+
+                 element: document.getElementById('about'),
+                 handler: function(direction) {
+                  $(".barWait").addClass("bar");
+                 },
+                 offset: 20 
+                });
+
+                var waypointRemove = new Waypoint({
+
+                element: document.getElementById('about'),
+                handler: function(direction) {
+                $(".barWait").removeClass("bar");
+                },
+                offset: 20
+                });
+                
+            });
+
+            $(document).ready(function(){
+
+                var arrowsWaypoint = new Waypoint({
+                
+                   element: document.getElementById('footer'),
+                   handler: function(direction) {
+                    $(".barWait").addClass("bar");
+                   },
+                   offset: 20 
+                  });
+                
+                  var waypointRemove = new Waypoint({
+
+                  element: document.getElementById('about'),
+                  handler: function(direction) {
+                  $(".barWait").removeClass("bar");
+                  },
+                  offset: 20
+                  });
+  
+});
+          
+          //
+          //
+          //SCOLLING SCRIPT
+          //
+          //
+      
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+              
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+                
+                  // Store hash
+                  var hash = this.hash;
+                
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    
+                  }, 800, function(){
+                  
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+
+        </script>
+
+    </body>
+</html>
